@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif; 
+}
+body{
+    background-image: url(iphonebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+nav h1{
+    color: aliceblue;
+    font-size: 35px;
+    letter-spacing: normal;
+}
+span{
+    color: lightslategray;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 25px;
+}
+nav button{
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 6px;
+    border: 2px solid ivory ;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 12px;
+    transition: transform 0.4s;
+color: aliceblue;
+}
+nav button:hover{
+    background-color: transparent;
+    transform: scale(1.08);
+    transition: 0.3s ;
+}
+nav a{
+    text-decoration: none;
+color: antiquewhite;
+}
+nav a:hover{
+    color: lightslategray;
+    transition: 0.4s;
+    transform: scale(1.08) ;
+}
+.rectangle{
+position: absolute;
+left: 30px;
+right: 30px;
+width: 40px;
+height: 500px;
+border-radius: 150px;
+border: 1px solid #808080;
+background: rgba(254, 254, 254, 0.07);
+background-blend-mode: normal;
+backdrop-filter:blur(5px);
+}
+.rectangle ul li a{
+    color: aliceblue;
+}
+.rectangle ul li{
+    list-style: none;
+    color: aliceblue;
+
+}
+.rectangle ul li a #user{
+    position: absolute;
+    left: 12px;
+    top: 40px;
+    width: 200px;
+    height: 90px;
+}
+.rectangle ul li a #bag{
+    position: absolute;
+    left: 12px;
+    top: 150px;
+    width: 200px;
+    height: 100px;
+}
+.rectangle ul li a #settings{
+    position: absolute;
+    left: 12px;
+    top: 280px;
+    width: 100px;
+    height: 100px;
+}
+.rectangle ul li a #cs{
+    position: absolute;
+    left: 12px;
+    top: 400px;
+    width: 100px;
+    height: 100px;
+}
+.sn a button{
+    position: absolute;
+    top: 600px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 6px;
+    border: 2px solid ivory ;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 12px;
+    transition: transform 0.4s;
+    color: aliceblue;
+}
+.sn a button:hover{
+    transition: ease-out 0.3s;
+    transform: scaleY(1.08) scaleX(1.08);
+    background-color: transparent;
+    
+}
+.fb a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.insta a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.twt a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.fb a i{
+    position: absolute;
+    top: 600px;
+left: 200px;
+}
+.insta a i{
+    position: absolute;
+    top: 600px;
+left: 250px;
+}
+.twt a i{
+    position: absolute;
+    top: 600px;
+left: 300px;
+}
+.fb i:hover{
+    color: lightslategray;
+    transition: ease-out 0.3s;
+    transform: scale(2.00);
+}
+.insta i:hover{
+    color: lightslategray;
+    transition: ease-out 0.3s;
+    transform: scale(2.00);
+}
+.twt i:hover{
+    color: lightslategray;
+    transition: ease-out 0.3s;
+    transform: scale(2.00);
+}
+.rectangle ul li a i:hover{
+    color: lightslategray;
+    transition: 0.3s;
+    transform: scaleY(1.08);
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+}
+/*section{
+   border: 5px solid;
+   margin: auto;
+   width: 50%;
+   padding: 10px;
+   align-content: center;
+}*/
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3B3838;
+    padding: 0 2px;
+}
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+
+}
+.container h1{
+    text-align: center;
+}
+.container form{
+    margin-top: 30px;
+}
+form .inputBox{
+    width: 100%;
+    margin-top: 20px;
+
+}
+.inputBox label{
+    color: #333;
+
+}
+form :where(.inputBox input, .selectbox){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border-radius: 6px;
+    padding: 0 15px ;
+}
+/*.form .column .inputBox input{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border-radius: 6px;
+    padding: 0 15px ;
+}*/
+ form .column { 
+    position: relative;
+    display: flex;
+    column-gap: 15px;
+}
+form .gendercon{
+    margin-top: 20px;
+}
+.gendercon h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+form :where(.genderopt, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+form .gender{
+    column-gap: 5px;
+    cursor: pointer;
+}
+form :where(.gender input, .gender label){
+    cursor: pointer;
+
+}
+.address :where(input, .selectbox){
+    margin-top: 15px;
+
+}
+.selectbox select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+button{
+width: 100%;
+background-color: #929292;
+color: #ddd;
+margin-top: 20px;
+border: none;
+    outline: none;
+    border-radius: 6px;
+    height: 55px;
+    font-weight: 400;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #3B3838;
+    transition: all 0.5s ease;
+    
+}
+@media screen and (max-width: 500px){
+    form .column{
+        flex-wrap: wrap;
+    }
+    form :where(.genderopt, .gender){
+        row-gap: 15px;
+    }
+}
